@@ -1,12 +1,11 @@
-var produtos = new Array('caneta', 'lapis', 'tesoura', 'borracha', 'caderno', 'livro')
-
-produtos.push('compasso', 'cartolina')
-
-var output = document.querySelector('div#output')
+var produtos = new Array('Papel', 'Lapis', 'Caneta', 'Folha', 'Caderneta')
+produtos.push('Livro', 'Apagador', 'Compasso')
 
 var msg = ''
+var output = document.querySelector('div#output')
+
 for(var i = 0; i < produtos.length; i++) {
-    msg += 'produto ' + (i + 1)  + ': '+ produtos[i] +' <br>'
+    msg += 'produto ' + (i + 1) + ': ' + produtos[i] + '<br>'
 }
 
 output.innerHTML = msg
